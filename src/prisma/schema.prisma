@@ -52,7 +52,6 @@ model Comment {
   parentId  String?
   likes     Like[]
 
-  @@unique([postId, userId])
   @@map("nested-comments_comment")
 }
 
